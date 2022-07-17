@@ -13,6 +13,10 @@
     margin-right: auto;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -49,6 +53,7 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     background-color: #DE2E54;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .hero {
