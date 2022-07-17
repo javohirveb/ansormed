@@ -17,11 +17,26 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+*:focus {
+    outline: 2px dotted #0015ff;
+    outline-offset: 3px;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
+}
+
+header a img:hover {
+    color: #0EB4C1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+header a img:active {
+    opacity: 0.6;
 }
 
 .header-items {
@@ -43,17 +58,39 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.header-items li a:hover {
+    color: #DE2E54;
+}
+
+.header-items li a:active {
+    opacity: 0.6;
 }
 
 .main-link {
     color: white;
-    font-weight: 500;
+    font-weight: 700;
     border-radius: 12px;
     padding: 12px 24px;
     text-decoration: none;
     text-transform: uppercase;
     background-color: #DE2E54;
     font-family: 'Open Sans', sans-serif;
+}
+
+header .main-link:hover {
+    padding: 10px 22px;
+    color: #DE2E54;
+    background-color: #fff;
+    border: 2px solid #DE2E54;
+}
+
+header .main-link:active {
+    opacity: 0.6;
+    background-color: #DE2E54;
+    color: #fff;
 }
 
 .hero {
@@ -66,6 +103,18 @@ header {
 .hero-texts {
     padding-top: 120px;
     width: 500px;
+}
+
+.hero-texts a {
+    transition: 0.2s ease;
+}
+
+.hero-texts a:hover {
+    opacity: 0.8;
+}
+
+.hero-texts a:active {
+    opacity: 0.6;
 }
 
 .hero-texts h1 {
@@ -115,7 +164,6 @@ header {
     justify-content: center;
     align-items: center;
     padding-left: 98px;
-    padding-right: 98px;
     width: 864px;
     height: 200px;
     margin-bottom: 80px;
@@ -148,8 +196,22 @@ header {
     color: #444444;
 }
 
-.link-item {
-    margin-left: 384px;
+.services .link-item {
+    display: flex;
+    justify-content: center;
+}
+
+.link-item a:hover {
+    padding: 10px 22px;
+    color: #DE2E54;
+    background-color: #fff;
+    border: 2px solid #DE2E54;
+}
+
+.link-item a:active {
+    opacity: 0.6;
+    background-color: #DE2E54;
+    color: #fff;
 }
 
 .registration {
@@ -158,14 +220,18 @@ header {
     background-color: #0EB4C1;
 }
 
-.registration h2 {
+.registration .container h2 {
     color: white; 
     font-weight: 700;
     font-size: 36px;
     line-height: 120%;
-    margin-left: 314px;
-    margin-bottom: 60px;
-    padding-top: 60px;
+    margin-top: 60px;
+}
+
+.registration .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .registration-link {
@@ -176,7 +242,24 @@ header {
 
 .registration-link a {
     margin-right: 40px;
-    padding-top: 64px;
+    margin-top: 35px;
+}
+
+.registration-link a:last-child {
+    margin-right: 0;
+}
+
+.registration-link a {
+    transition: 0.2s ease;
+}
+
+.registration-link a:hover {
+    background-color: #DE2E54;
+    border: 2px solid #DE2E54;
+}
+
+.registration-link a:active {
+    opacity: 0.6;
 }
 
 .registration a {
@@ -200,9 +283,18 @@ footer {
     background-color: #222;
 }
 
-.logo-img {
-    color: white;
+footer a {
+    transition: 0.2s ease;
 }
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+footer a:active {
+    opacity: 0.6;
+}
+
 
 footer ul {
     display: flex;
@@ -223,4 +315,14 @@ footer ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 800;
+    transition: 0.2s ease;
+}
+
+footer ul li a:hover {
+    color: #DE2E54;
+}
+
+footer ul li a:active {
+    opacity: 0.6;
+    color: #fff;
 }
