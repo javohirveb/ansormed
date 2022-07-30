@@ -69,6 +69,7 @@ header a img:active {
 }
 
 .main-link {
+    display: inline-block;
     color: white;
     font-weight: 700;
     border-radius: 12px;
@@ -119,7 +120,7 @@ header .main-link:active {
 .hero-texts h1 {
     color: white;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 120%;
     margin-bottom: 16px;
 }
@@ -127,7 +128,7 @@ header .main-link:active {
 .hero-texts p {
     color: aliceblue;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 150%;
     margin-bottom: 36px;
 }
@@ -324,4 +325,66 @@ footer ul li a:hover {
 footer ul li a:active {
     opacity: 0.6;
     color: #fff;
+}
+
+@media only screen and (max-width: 512px){
+    header img {
+        transform: scale(0.8);
+        padding: 0;
+        margin: 0;
+    }
+    .header-items {
+        display: none;
+        width: 100%;
+    }
+    header .main-link {
+        display: none;
+    }
+    .hero {
+        background: none;
+    }
+    .hero-img {
+        display: none;
+    }
+    .hero-texts{
+        padding: 1rem 0;
+    }
+    .hero-texts h1 {
+        font-size: 1.5rem;
+    }
+    .hero-texts p {
+        font-size: 0.75rem;
+    }
+    .background-item {
+        width: 100%;
+        height: 20rem;
+    }
+    .services {
+        margin-top: 0;
+    }
+    .services img {
+        display: none;
+    }
+    .service-text {
+        width: 100%;
+        float: right;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .services ul li {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .registration .container h2 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .registration-link a {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    footer ul {
+        display: none;
+    }
 }
