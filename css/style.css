@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,6 +12,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -21,7 +21,6 @@ body {
     outline: 2px dotted #0015ff;
     outline-offset: 3px;
 }
-
 
 header {
     display: flex;
