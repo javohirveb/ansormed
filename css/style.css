@@ -343,6 +343,9 @@ footer ul li a:active {
     .hero {
         background: none;
     }
+    .main-link {
+        font-size: 0.75rem;
+    }
     .hero-img {
         display: none;
     }
@@ -372,8 +375,8 @@ footer ul li a:active {
         padding-left: 0px;
     }
     .services ul li {
-        padding: 0;
-        margin: 0;
+        padding-left: 0;
+        margin-left: 0;
         width: 100%;
     }
     .registration .container h2 {
