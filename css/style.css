@@ -365,6 +365,9 @@ footer ul li a:active {
     .services {
         margin-top: 0;
     }
+    .services h2 {
+        margin-bottom: 30px;
+    }
     .services img {
         display: none;
     }
@@ -373,6 +376,17 @@ footer ul li a:active {
         float: right;
         margin-left: 0px;
         padding-left: 0px;
+    }
+    .service-text h4 {
+        margin-top: auto;
+    }
+    .service-text p {
+        margin-top: auto;
+    }
+    .services ul {
+        padding-left: 0%;
+        padding-right: 10px;
+        margin: 0;
     }
     .services ul li {
         padding-left: 0;
