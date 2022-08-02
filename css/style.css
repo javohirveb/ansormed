@@ -368,6 +368,9 @@ footer ul li a:active {
     .services h2 {
         margin-bottom: 30px;
     }
+    .services ul:last-child {
+        margin-bottom: 20px;
+    }
     .services img {
         display: none;
     }
