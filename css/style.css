@@ -329,9 +329,8 @@ footer ul li a:active {
 
 @media only screen and (max-width: 512px){
     header img {
-        transform: scale(0.8);
-        padding: 0;
-        margin: 0;
+        width: 150px;
+        height: 40px;
     }
     .header-items {
         display: none;
